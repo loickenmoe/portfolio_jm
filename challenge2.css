@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope&family=Quicksand:wght@300&display=swap");
+
 /*variables*/
-*, ::before, ::after {
+
+::before,
+::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,7 +13,7 @@ body {
   font-family: "Quicksand", sans-serif;
   height: 100vh;
   width: 100%;
-  padding: 5rem;
+  padding: 1rem;
 }
 
 /*navBar*/
@@ -22,32 +25,40 @@ body {
   background-color: aliceblue;
   box-shadow: -3px 2px 4px rgba(0, 0, 0, 0.6);
 }
+
 .navBar__items {
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
   list-style-type: none;
 }
+
 .navBar__icons .navBar--v {
   width: 24px;
   height: 24px;
 }
-.navBar__items .navBar--vert {
-  color: #218376;
-}
+
 .navBar__items .navBar--vert:hover {
   opacity: 1;
 }
+
 .navBar a {
   text-decoration: none;
   color: #323232;
   font-weight: 100;
 }
+
 .navBar a:hover {
   color: #218376;
   opacity: 0.5;
 }
 
+.navBar a:focus {
+  color: #218376
+}
+
+
+/* parallax1  and backgroung-image1*/
 .parallax {
   background-size: cover;
   background-repeat: no-repeat;
@@ -59,6 +70,7 @@ body {
 .parallax1 {
   background-image: url(images2/download\ \(1\).png);
 }
+
 .parallax1 h1 {
   color: white;
   word-spacing: 0.5em;
@@ -68,15 +80,18 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
+
 .parallax1 p {
   color: white;
   word-spacing: 0.5em;
   text-align: center;
 }
+
 .parallax1 span {
   color: #00E3c8;
 }
 
+/* parallax2*/
 .parallax2 {
   background-image: url(images2/download\ \(2\).png);
   display: flex;
@@ -85,26 +100,32 @@ body {
   align-items: center;
   gap: 2rem;
 }
+
 .parallax2__boxes {
   border: black 8px solid;
   padding: 2rem 20rem;
   font-size: 1.5em;
   font-weight: bolder;
 }
+
 .parallax2__boxes:hover {
   background-color: white;
 }
+
 .parallax2__sky {
   background-color: #B7F3EC;
   padding: 2rem 20.5rem;
 }
+
 .parallax2__bleu {
   background-color: #00E3c8;
 }
+
 .parallax2__fonce {
   background-color: #218376;
 }
 
+/* section in front */
 .content1 {
   border: #323232 2px solid;
   background-color: #00E3c8;
@@ -112,6 +133,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .content1__elem {
   display: flex;
   flex-direction: column;
@@ -119,39 +141,46 @@ body {
   align-items: center;
   gap: 2rem;
 }
+
 .content1__elem p {
   max-width: 400px;
   letter-spacing: 0.3rem;
 }
+
 .content1__elem h1 {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-family: "Manrope", sans-serif;
   font-size: 2em;
 }
+
 .content1__elem button {
   background-color: black;
   color: white;
   padding: 0.5rem 1rem;
 }
+
 .content1__elem button:hover {
   background-color: #00E3c8;
   color: black;
   border: 2px solid black;
 }
 
+/* pictures section */
 .content3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   overflow: hidden;
 }
+
 .content3 img {
   object-fit: cover;
   object-position: center;
   width: 100%;
   height: 100%;
 }
+
 .content3 div {
   position: absolute;
   z-index: 1;
@@ -166,16 +195,20 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
   opacity: 0;
 }
+
 .content3 div:hover {
   opacity: 1;
 }
+
 .content3 div h1 {
   text-transform: uppercase;
   font-weight: bold;
 }
+
 .content3 div p {
   max-width: 300px;
 }
+
 .content3 a {
   color: white;
   text-decoration: none;
@@ -183,6 +216,7 @@ body {
   overflow: hidden;
   transition: transform 2s;
 }
+
 .content3 a:hover {
   transform: scale(1.02);
 }
@@ -196,58 +230,187 @@ body {
   gap: 3rem;
   padding: 3rem 2rem;
 }
+
 .content4__title {
   border: black 8px solid;
   padding: 2rem 20rem;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: bolder;
-  /*  &:hover{
-       background-color: white;
-   } */
 }
+
+/* contact section */
 .content4__form {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
 }
+
 .content4__left {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
+
 .content4 label {
   display: block;
 }
+
 .content4 input {
   width: 100%;
   height: 1.5rem;
   background-color: #00E3c8;
   border: black 1px solid;
+  outline: none;
+
 }
+
 .content4 input:hover {
   border: 2px solid black;
 }
+
 .content4 button {
   background-color: black;
   color: white;
   padding: 0.5rem 1rem;
   transition: all 1s;
 }
+
 .content4 button:hover {
   background-color: #00E3c8;
   color: black;
   border: 2px solid black;
 }
+
 .content4__input {
   display: flex;
   gap: 1.3rem;
 }
+
 .content4 textarea {
   background-color: #00E3c8;
   width: 100%;
+  resize: vertical;
   transition: all 1s;
+  outline: none;
+
 }
+
 .content4 textarea:hover {
   border: 2px solid black;
-}/*# sourceMappingURL=challenge2.css.map */
+}
+
+/* responsive */
+
+@media (max-width: 1024px) {
+
+  /* Styles pour les écrans de 1024px maximum */
+  body {
+    padding: 5px;
+  }
+
+  /*navBar*/
+  .navBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* section in front */
+  .content1__elem {
+    text-align: justify;
+    gap: 1rem;
+    margin-right: 5rem;
+    padding: 1rem 10px;
+  }
+
+  .content1__elem p {
+    letter-spacing: 0.1rem;
+  }
+
+  .content1__elem h1 {
+    text-align: center;
+  }
+
+  /* section 4 */
+  .content4__title {
+    padding: 2rem 10rem;
+    text-transform: capitalize;
+  }
+
+}
+
+@media (min-width:320px) and (max-width: 768px) {
+
+  body {
+    padding: 5px;
+  }
+
+  /*navBar*/
+  .navBar {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 20px;
+    padding: 1rem;
+  }
+
+  .navBar__items {
+    gap: 10px;
+    font-size: 11px;
+  }
+
+  /* parallax1  and backgroung-image1*/
+  .parallax1 h1 {
+    font-size: 2.5em;
+  }
+
+  /* parallax2*/
+  .parallax2__boxes {
+    padding: 2rem 5.5rem;
+  }
+
+  .parallax2__sky {
+    padding: 2rem 6rem;
+  }
+
+  /* section in front */
+  .content1 {
+    flex-direction: column;
+  }
+
+  .content1__elem {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* contact section */
+  .content4__title {
+    padding: 1rem;
+    font-weight: bolder;
+  }
+
+  .content4__title h1 {
+    font-size: 2rem;
+  }
+
+  /* pictures section */
+
+
+  /* contact section */
+  .content4__form {
+    flex-direction: column;
+  }
+
+  .content4__left {
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .content4__form .navBar__icons {
+    margin: 0 0 -2rem 0;
+  }
+
+}
